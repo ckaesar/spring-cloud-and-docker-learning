@@ -1,0 +1,10 @@
+server:
+  port: 8765
+
+spring:
+  application:
+    name: microservice-consumer-movie
+    
+microservice-provider-user:
+  ribbon:
+    listOfServers: localhost:8764, localhost:8763
