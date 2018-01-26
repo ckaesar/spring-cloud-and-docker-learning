@@ -4,12 +4,12 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.itmuch.cloud</groupId>
-	<artifactId>microservice-hystrix-turbine</artifactId>
+	<artifactId>microservice-hystrix-turbine-mq</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>microservice-hystrix-turbine</name>
-	<description>microservice-hystrix-turbine</description>
+	<name>microservice-hystrix-turbine-mq</name>
+	<description>microservice-hystrix-turbine-mq</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -28,7 +28,12 @@
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-turbine</artifactId>
+			<artifactId>spring-cloud-starter-stream-rabbit</artifactId>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-turbine-stream</artifactId>
 		</dependency>
 
 		<dependency>
@@ -37,7 +42,7 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-
+	
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
