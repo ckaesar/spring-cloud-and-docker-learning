@@ -1,0 +1,16 @@
+server:
+  port: 8080
+  
+spring:
+  application:
+    name: microservice-config-server
+  cloud:
+    config:
+      server:
+        git:
+          # 配置Git仓库的地址
+          uri: https://github.com/ckaesar/spring-cloud-config-repo
+          # Git仓库的账号
+          username: a502165083@126.com
+          # Git仓库的密码
+          password: ck13317541890
